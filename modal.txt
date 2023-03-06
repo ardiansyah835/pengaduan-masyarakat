@@ -1,0 +1,99 @@
+<div class="col-md-12" style="margin-left: -15px;">
+							<div class="card">
+								<div class="card-header">
+									<div class="d-flex align-items-center">
+										<h4 class="card-title">Buat pengaduan</h4>
+										<button class="btn btn-primary btn-round ml-auto" data-toggle="modal" data-target="#addRowModal">
+											<i class="fas fa-edit"></i>
+											  Add report
+										</button>
+									</div>
+								</div>
+								<div class="card-body">
+									<!-- Modal -->
+									<div class="modal fade" id="addRowModal" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content" style="background: #263253;">
+												<div class="modal-header no-bd">
+													<h5 class="modal-title">
+														<span class="fw-mediumbold" style="font-weight: 900;"><b>New</b></span> 
+														<span class="fw-light" style="font-weight: 900;"><b>report</b></span>
+													</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<p class="small" style="font-weight: 900;"><b>Create a new report</b></p>
+													<form>
+														<div class="row">
+															<div class="col-sm-12">
+																<div class="form-group form-group-default" style="background: #1A2035;">
+																	<label>Nama</label>
+																	<input id="addName" type="text" class="form-control" placeholder="Masukan nama">
+																</div>
+															</div>
+															<div class="col-md-6 pr-0">
+																<div class="form-group form-group-default" style="background: #1A2035;">
+																	<label>pengaduan</label>
+																	<input id="addPosition" type="text" class="form-control" placeholder="Masukan pengaduan">
+																</div>
+															</div>
+															<div class="col-md-6">
+																<div class="form-group form-group-default">
+																	<label>Isi laporan</label>
+																	<input id="addOffice" type="text" class="form-control" placeholder="Masukan isi laporan">
+																</div>
+															</div>
+															<div class="col-md-6 pr-0">
+																<div class="form-group form-group-default" style="background: #1A2035;">
+																	<label>Gambar</label>
+																	<input id="addPosition" type="file" class="form-control" placeholder="Masukan pengaduan">
+																</div>
+															</div>
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer no-bd">
+													<button  type="button" id="addRowButton" class="btn btn-secondary">Add</button>
+													<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive">
+										<table id="add-row" class="display table table-striped table-hover" >
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Pengaduan</th>
+													<th>Isi laporan</th>
+													<th style="width: 10%">Action</th>
+												</tr>
+											</thead>
+											<tbody>
+											<tr>
+													<td>Ardiansyah</td>
+													<td>Bencana alam</td>
+													<td>Terjadi banjir di daerah papua setinggi 120cm, semua penduduk perlu di evakuasi</td>
+													<td>
+														<div class="form-button-action">
+															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Edit">
+																<i class="fa fa-edit"></i>
+															</button>
+															<!-- <button type="button" data-toggle="tooltip" class="btn btn-link btn-warning btn-lg" id="alert_demo_7" data-original-title="Remove">
+																<i class="far fa-trash-alt"></i>
+															</button> -->
+															<button type="button" data-toggle="tooltip" class="btn btn-link btn-warning btn-lg" id="alert_demo_8" data-original-title="Remove">
+																<i class="far fa-trash-alt"></i>
+															</button>		
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
